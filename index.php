@@ -1,0 +1,30 @@
+<?php
+ include "autenticacion.php";
+?>
+<ol>
+    <li><a href="db_connect.php">Conectar</a></li>
+    <li><a href="db_create.php">Crear la base de datos (conecto, creo, desconecto)</a></li>
+    <li><a href="db_drop.php">Borrar la base de datos (conecto, borro, desconecto)</a></li>
+    <li><a href="table_create_guests.php">Crear tabla myGuests (conecto, creo, desconecto)</a></li>
+
+    <li><a href="table_check_exists.php">Verificar la existencia de la tabla myGuests (conecto, consulto, desconecto)</a></li>
+            <li><a href="table_drop.php">Borrar tabla myGuests (conecto, borro, desconecto)</a></li>
+
+    <li><a href="data_insert_single.php">Insertar datos (registro único) (conecto, inserto, desconecto)</a></li>
+    <li><a href="data_insert_single_get_last_id.php">Insertar datos (registro único) y Obtener último ID insertado (conecto, inserto, consulto último id, desconecto)</a></li>
+    <li><a href="data_insert_multiple_simple.php">Insert multiple data sin preparar (conecto, ejecuto x3, desconecto)</a></li>
+    <li><a href="data_insert_multiple_prepared.php">Insert multiple data (conecto, preparo, ejecuto x3, desconecto)</a></li>
+    <li><a href="data_count.php">Contar los registros de la tabla (conecto, select, desconecto)</a></li>
+    <li><a href="data_select_all.php">Visualizar todos los datos (conecto, select, desconecto)</a></li>
+    <li><a href="data_select_where.php">Visualizar los datos cuyo lastName es Doe (conecto, select where, desconecto)</a></li>
+    <li><a href="data_select_orderby.php">Visualizar los datos ordenados por lastName (conecto, select orderby, desconecto)</a></li>
+    <li><a href="data_select_where_orderby_html_table.php">Visualizar datos filtrados y ordenados en tabla HTML (conecto, select where orderby, desconecto)</a></li>
+    <li><a href="data_delete.php">Borrar el usuario id=3 (conecto, delete, desconecto)</a></li>
+    <li><a href="data_update.php">Actualizar el lastname del usuario id=2 (conecto, update, desconecto)</a></li>
+    <li><a href="form_insert.php">Insertar un nuevo usuario</a></li>
+    <li><a href="form_select_lastname.php">Buscar por apellido</a></li>
+    <li><a href="form_select_order.php">Ver todos ordenados</a></li>
+    <li><a href="form_delete.php">Borrar usuario por ID</a></li>
+    <li><a href="form_update_lastname.php">Actualizar apellido por ID</a></li>
+    <li><a href="logout.php">Cerrar sesión</a></li>
+</ol>
